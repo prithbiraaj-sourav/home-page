@@ -1,4 +1,8 @@
 @import "tailwindcss";
+/* @import "tailwindcss/preflight"; */
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
   --background: #ffffff;
@@ -24,3 +28,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.text-gradient {
+  background: linear-gradient(to right, #fca5a5, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
