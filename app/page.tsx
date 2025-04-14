@@ -30,27 +30,35 @@ export default function Home() {
       {/* Hero */}
       <section className="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 gap-8 md:gap-10 lg:ml-[211px] relative">
         <div className="xl:w-1/2 space-y-4 lg:space-y-6 relative xl:absolute">
-          <p className="text-[24px] md:text-[30px] lg:text-[35px] font-[700] font-urbanist leading-[1.2]">
+          <p className="text-[24px] md:text-[30px] lg:text-[35px] mx-[10px] md:mx-0 font-[700] font-urbanist leading-[1.2]">
             Want to Turn Social Media Into a Profitable Career?
           </p>
           <p className="text-[24px] md:text-[30px] lg:text-[35px] max-w-full md:max-w-[516px] font-[700] font-urbanist leading-[1.2] text-[#00E7F9] drop-shadow-[2px_2px_0_#FC004E] tracking-normal">
             Discover your way to success with Fametonic:
           </p>
           <div className="space-y-1 text-sm text-gray-400 max-w-full md:max-w-[516px]">
-            <p className='text-[14px] md:text-[16px] font-[600] leading-[20px] md:leading-[22px]'>✨ Start growing your influence right away—no waiting required!</p>
-            <p className='text-[14px] md:text-[16px] font-[600] leading-[20px] md:leading-[22px]'>✨ Create viral TikToks and Reels step by step with easy-to-follow lessons</p>
-            <p className='text-[14px] md:text-[16px] font-[600] leading-[20px] md:leading-[22px]'>✨ Use a Personal AI Worker to boost your content </p>
-            <p className='text-[14px] md:text-[16px] font-[600] leading-[20px] md:leading-[22px]'>✨ Learn from expert-led courses designed for aspiring influencers</p>
+            <p className='flex text-[14px] md:text-[16px] font-[600] leading-[20px] md:leading-[22px]'>
+              <div className="mr-2">✨</div>Start growing your influence right away—no waiting required!
+            </p>
+            <p className='flex not-[]:text-[14px] md:text-[16px] font-[600] leading-[20px] md:leading-[22px]'>
+              <div className="mr-2">✨</div>Create viral TikToks and Reels step by step with easy-to-follow lessons
+            </p>
+            <p className='flex text-[14px] md:text-[16px] font-[600] leading-[20px] md:leading-[22px]'>
+              <div className="mr-2">✨</div>Use a Personal AI Worker to boost your content
+            </p>
+            <p className='flex text-[14px] md:text-[16px] font-[600] leading-[20px] md:leading-[22px]'>
+              <div className="mr-2">✨</div>Learn from expert-led courses designed for aspiring influencers
+            </p>
           </div>
 
-          <div className='md:hidden flex-col justify-center mt-[10px] w-full'>
-            <p className='text-[10px] md:text-[12px] max-w-full md:max-w-[516px] font-[500] text-[#ABABAB]'>By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy, Subscription Terms</p>
+          <div className='md:hidden flex flex-col items-center'>
+            <p className='text-[10px] md:text-[12px] max-w-full md:max-w-[516px] font-[500] text-[#ABABAB] text-center mb-[5px]'>By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy, Subscription Terms</p>
             <p className='text-[8px] md:text-[10px] font-[500] text-[#ABABAB]'>Fametonic 2025 ©All Rights Reserved.</p>
           </div>
           <div>
             <button className="bg-[#FC004E] justify-center text-white font-bold py-2 px-6 w-full md:w-[313px] rounded-[10px] shadow-[2px_2px_10px_0px_#00E7F9] hover:shadow-[2px_2px_15px_0px_#00E7F9] transition-all duration-300 flex items-center gap-2">
               GET STARTED
-              <span className="text-lg">{'>'}</span>
+              <span className="text-lg mb-[3px]">{'>'}</span>
             </button>
             <p className='text-[400] justify-center text-center mt-[10px] w-full md:w-[313px] text-[12px] leading-[16px]'>1-minute quiz for personalized Insights</p>
           </div>
@@ -62,7 +70,7 @@ export default function Home() {
         </div>
 
         <div className="xl:w-1/2 flex justify-center ml-[0px] xl:ml-[459px]">
-          <div className='w-full w-[666px] xl:max-w-[666px] h-auto'>
+          <div className='w-full mx-[10px] md:mx-[0px] xl:max-w-[666px] h-auto'>
             <img src={sideImage.src || sideImage} alt="Side Image" />
           </div>
         </div>
